@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query selector</title>
+</head>
+<body>
+
+    <div id="div">
+        <p class = "query">Abdul</p>
+        <p>Ismail</p>
+        <p class = "query">Muzammil</p>
+        <p>Saad</p>
+        <p class = "lorem">Lorem, ipsum.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+
+    <script>
+    // the queryselectorall method selects all the tags with same elements and we use for loop for them to get
+    // updated
+        let para = document.querySelectorAll("p.query");
+        // console.log(para);
+        for(let i = 0; i<para.length; i++){
+            para[i].innerHTML = "Abdul Rahman"
+        }
+
+        // the queryselector method selects the first tag with matching classname and edits it
+         let queryOne = document.querySelector("p.lorem")
+         queryOne.innerHTML = "SAMID⚡⚡⚡⚡";
+         console.log(queryOne);
+         
+        
+
+    </script>
+
+</body>
+</html>
