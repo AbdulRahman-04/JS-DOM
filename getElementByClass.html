@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p class="para">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ratione.
-    </p>
-    
-    
-    <script>
-     let para = document.getElementsByClassName("para")
-     para.onclick = alert("this is para")
-    </script>
+   <button onclick="classClick()"   id="btn1">Submit 1</button>
+
+   <script>
+    let myBtn = document.getElementsByClassName("btn1");
+    console.log(myBtn);
+    function classClick(){
+        alert("this is class pop up!")
+    }
+   </script>
 </body>
 </html>
