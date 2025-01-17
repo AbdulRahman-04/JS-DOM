@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Name</title>
+</head>
+<body>
+    
+    <div id="div1">
+        <h2>CODE FOR</h2>
+    <p> coding </p>
+    <h2> CFI </h2> 
+    <p> startup </p>
+    </div>
+    
+    <script>
+        // the below code is for manipulating elements with their tags names just like classes or id's we use 
+        // // for loop if we are performing same operations on more than one same tag
+        
+        // let h2Tags = document.getElementsByTagName("h2");
+        // for(let i = 0; i<h2Tags.length; i++){
+        //     h2Tags[i].innerHTML = "CODE FOR INDIA"
+        // }
+
+        // to perform operations when a tag/tags is inside a div tag
+        let div1 = document.getElementById("div1");
+        let pTags = div1.getElementsByTagName("p");
+        for(let i = 0; i<pTags.length; i++){
+            pTags[i].innerHTML = "CODE FOR INDIA"
+        }
+    </script>
+
+</body>
+</html>
