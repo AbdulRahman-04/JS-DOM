@@ -9,13 +9,22 @@
 
 <body>
 
-    <button onclick="clicking()" id="btn">Click</button>
+    <ul>
+        <li>Home</li>
+        <li id = "about">About</li>
+        <li>Contact</li>
+    </ul>
+
     <script>
-        let btn = document.getElementById("btn");
-        console.log(btn);
-        function clicking(){
-            alert("hello")
-        }
+        // this is how we can select an HTML element using dom method
+        let element = document.getElementById("about");
+        console.log(element);
+
+        // now we can manipulate the html element using dom using(inner.html)
+        element.innerHTML = "About Us";
+        console.log(element);
+        
+        
     </script>
 
 </body>
