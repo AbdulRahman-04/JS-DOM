@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="list">
+        <li>HOME</li>
+        <li>Services</li>
+        <li>About us</li>
+    </ul>
+    
+
+    <script>
+       
+    //    we can use remove child property to remoe chilld elements inside any div or lists etc the below code 
+    //    shows how can remove the irst or second or even ird element from list.
+
+       let getElem = document.getElementById("list");
+
+       let removeChild = getElem.firstElementChild.nextElementSibling.nextElementSibling;
+
+       getElem.removeChild(removeChild)  
+
+    </script>
+</body>
+</html>
