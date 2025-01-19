@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="list">
+        <li>LIST1</li>
+        <li>LIST2</li>
+        <li>LIST3</li>
+        <li>LIST4</li>
+    </ul>
+
+    <script>
+
+        // the below code is to insert contentbefore first elementchild
+       
+    //   let list = document.getElementById("list");
+
+    //   let createElem = document.createElement("h4");
+
+    //   createElem.textContent = "this is an unordered list: ";
+
+    //   let firstChild = list.firstElementChild;
+    //   list.insertBefore(createElem, firstChild)
+      
+    
+    //   the below code is to add content before 2nd 3rd or 4th element
+
+    let list = document.getElementById("list");
+
+    let createElem = document.createElement("h5");
+    createElem.textContent = "this is list item 3"
+
+    let list3 = list.firstElementChild.nextElementSibling.nextElementSibling;
+
+    list.insertBefore(createElem, list3)
+
+    </script>
+</body>
+</html>
