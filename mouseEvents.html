@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+        height: 100px;
+        width: 100px;
+        background-color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box" onclick="oncClick()" oncontextmenu="rightClick()" ondblclick="dblClick()" onmouseover="mouseover()" onmouseout="mouseout()">
+
+    </div>
+
+    <script>
+        // there are 5 types of mouse events: onclick, oncontextmenu, ondblclcik, onmouseoover, onmousedown
+        // onmouseover, onmouseout
+       let box = document.getElementById("box");
+    //    onclick event
+       function oncClick(){
+        //    alert("box clicked")  
+       }
+ 
+    //    oncontextmenu
+    function rightClick(){
+        alert("box right clicked")
+    }
+
+    // ondblclick
+    function dblClick(){
+        alert("box double clicked")
+    }
+
+    // onmouseover
+    function mouseover(){
+        alert("mouse is hovering on box")
+    }
+
+    // onmouseout
+    function mouseout(){
+        alert("mouse has been removed from the box")
+    }
+    </script>
+
+</body>
+</html>
