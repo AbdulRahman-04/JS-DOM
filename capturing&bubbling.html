@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            padding: 80px;
+        }
+        #div{
+            height: 150px;
+            width: 60%;background-color: aqua;
+            padding: 90px;
+        }
+        #btn{
+         padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    
+    Event Capturing: In JavaScript, event capturing (also known as the trickling
+    phase) refers to the process where an event starts at the root of the DOM
+    tree and propagates down to the target element. It moves from parent
+    elements to the target, and you can enable this phase by setting the {
+    capture: true } option when attaching an event listener.
+   
+    Event Bubbling:
+    Event bubbling is the default phase of event propagation in JavaScript,
+    where an event starts at the target element and propagates upward through
+    its parent elements in the DOM hierarchy, eventually reaching the root. This
+    allows parent elements to react to events occurring on their child elements. -->
+
+    <div id="div">
+        <button id="btn">
+            submit
+        </button>
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let div = document.getElementById("div");
+        let body = document.body;
+        
+        btn.addEventListener('click', function(event){
+            console.log('btn clicked');
+            event.stopPropagation()
+            
+        }, true);
+
+        div.addEventListener('click', function(event){
+            console.log('div clicked');
+            // event.stopPropagation()
+        }, true);
+
+        body.addEventListener('click', function(event){
+            console.log('body clicked...');
+            // event.stopPropagation()
+        }, true)
+    </script>
+  </body>
+</html>
