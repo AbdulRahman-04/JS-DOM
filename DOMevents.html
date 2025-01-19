@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- onclick event -->
+    <!-- <button id="btn" onclick=  "popup()">Click here</button> -->
+
+    <!-- event listener -->
+    <button id="btn1">Submit</button>
+    <script>
+      //   this below function is used for both onclick and addeventlistener
+      function popup() {
+        alert("form is submitted!✔");
+      }
+
+      // addeventlistener code
+      // let getbtn = document.getElementById("btn1");
+      // getbtn.addEventListener('click', popup)
+
+      // mouseover and mouseout is anevent in which whn we hover our mouse on an element and when we rmove our mouse from
+      // that element, the specific event will occur
+
+      let getBtn = document.getElementById("btn1");
+
+      function mouseover() {
+        alert("mouse is hovered");
+      }
+
+      function mouseout() {
+        alert("mouse is removed");
+      }
+
+      getBtn.addEventListener("mouseover", mouseover);
+
+      getBtn.addEventListener("mouseout", mouseout);
+    </script>
+  </body>
+</html>
