@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <ul id="list">
+        <li>Home</li>
+        <li>CFI</li>
+        <li>Contact us</li>
+    </ul>
+
+    <script>
+       
+       // we use replaceChild element to replace any element using javascript
+
+      let getList = document.getElementById("list");
+
+      let item = document.createElement("li");
+      item.textContent = "About us";
+
+      let itemReplace = getList.firstElementChild.nextElementSibling;
+
+      getList.replaceChild(item, itemReplace)
+      
+    </script>
+</body>
+</html>
