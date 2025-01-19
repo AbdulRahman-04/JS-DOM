@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+    <button id="btn">reload</button>
+
+    <script>
+        console.log(location.href);
+        console.log(location.pathname);
+        console.log(location.protocol);
+        
+        // to redirect to another link we can use three ocation methods i.e href, window.location, location.assign
+        
+        let btn = document.getElementById("btn")
+        
+        // window.location method
+        // btn.addEventListener('click', function(){
+        //     window.location = "https://google.com"
+        // })
+
+        // window.assign method
+        // btn.addEventListener('click', function(){
+        //     location.assign('https://youtube.com')
+        // });
+        
+        // location.replace : ye method aapku link pe lejata bu aap wo link se wapis apke ye html file pe nhiaa skte
+        btn.addEventListener('click', function(){
+            // location.replace('https://youtbe.com')
+            // reloads the page 
+            location.reload();
+        })
+    </script>
+</body>
+</html>
