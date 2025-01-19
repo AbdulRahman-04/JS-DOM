@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" id="myInput">
+    </form>
+    
+
+    <script>
+      
+      let input = document.getElementById("myInput");
+
+    //focus and blu event (when i click on input its focus event and when i click on empty space in body, its blur event)
+      
+    // event listener for focus
+    input.addEventListener('focus', function(){
+      input.style.background = "aqua"
+    });
+
+    // event listener for blur
+    input.addEventListener('blur', function(){
+        input.style.background = "white"
+    });
+
+    // change event in forms
+    input.addEventListener('change', function(){
+        console.log(this.value);
+    });
+
+   // input event in forms
+   input.addEventListener('input', function(){
+    console.log(this.value);
+    
+   })
+
+    </script>
+</body>
+</html>
