@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Submit form</button>
+
+    <script>
+      let getBtn = document.getElementById("btn");
+
+      function click1() {
+        alert("1st time clicked");
+      }
+
+      function click2() {
+        alert("2nd time clicked");
+      }
+
+      getBtn.addEventListener("click", click1);
+      getBtn.addEventListener("click", click2);
+
+      getBtn.removeEventListener("click", click2);
+    </script>
+  </body>
+</html>
