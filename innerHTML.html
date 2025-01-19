@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div id="intro">
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+    
+
+    <script>
+  
+    // innerHTML is not only used  for fetching html data but also it can manipulate the html content.
+    // the below two are examples of fetching data using inerHTML and manipulating the htm contet
+ 
+    // fetching the data
+    let getData = document.getElementById("intro");
+    let insideContent = getData.innerHTML;
+    console.log(insideContent);
+
+
+    // manipulating the content using innerHTML
+    let newContent = document.getElementById("intro");
+    newContent.innerHTML = " <h2> CFI </h2> <br> <p> this is code for india </p>  "
+    
+    
+
+
+    </script>
+    
+</body>
+</html>
