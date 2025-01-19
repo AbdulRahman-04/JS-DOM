@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="intro">
+        <p>HEY, this is a p tag</p>
+    </div>
+
+    <ul id="ulist">
+        <li> LIST 1 </li>
+        <li> LIST 2 </li>
+        <li> LIST 3 </li>
+    </ul>
+    
+
+    <script>
+      
+    //   append means adding new content to te existing content. there are two was to append content which is
+    //   createTextNode and textContent, where textContent is a property.
+    
+   let getElem = document.getElementById("intro");
+
+   let createElem = document.createElement("h1");
+
+   // we are adding content inside h1 element using createtextNode method 
+  //  let addTextNode = document.createTextNode("HEADING 1!!");
+    
+   // now, we'll be adding content inside the h1 eleent using textContent property
+   createElem.textContent = "YE HAI H1 HEADIG!🦾" ;
+
+  // createElem.appendChild(addTextNode);
+   getElem.appendChild(createElem);
+
+
+   // APPENDING CONTENT INSIDE BODY  tag
+   let bodyContent = document.body;
+
+   let createElement = document.createElement("h5");
+
+    createElement.textContent = "ye hai h5 heading";
+
+    bodyContent.appendChild(createElement);
+
+    // appendingcntent inside a list
+    let getList = document.getElementById("ulist");
+
+    let createNewElem = document.createElement("li");
+    createNewElem.textContent = " NEW LIST 4";
+
+    getList.appendChild(createNewElem);
+    </script>
+</body>
+</html>
