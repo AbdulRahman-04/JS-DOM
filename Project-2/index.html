@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 90px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #textarea {
+        height: 150px;
+        width: 30%;
+        margin-left: 460px;
+        margin-top: 40px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p {
+        margin-left: 580px;
+        margin-top: 50px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Word Counter</h1>
+    <textarea name="" id="textarea"></textarea>
+
+    <p>
+      <span id="word">0 </span> Words and <span id="char">0</span> Characters
+    </p>
+
+    <script>
+      let textarea = document.getElementById("textarea");
+      textarea.addEventListener("input", function () {
+        let text = this.value;
+        let char= text.length;
+        document.getElementById("char").innerHTML = char;
+
+        let words = text.split(" ");
+        let length = words.length;
+        document.getElementById("word").innerHTML = length
+      });
+
+    </script>
+  </body>
+</html>
