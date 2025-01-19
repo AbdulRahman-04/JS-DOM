@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="list">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>CONTACT</li>
+    </ul>
+
+    <script>
+      let getUl = document.getElementById("list");
+
+      let cloneUl = getUl.cloneNode(true); // writing true will also copy the chld items inside the ul i.e list items
+      cloneUl.id = "cloned list items";
+      //   console.log(cloneUl);
+
+      document.body.appendChild(cloneUl);
+    </script>
+  </body>
+</html>
