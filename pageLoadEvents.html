@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="./pexels-fotios-photos-1540258.jpg" alt="image" id = "img">
+
+    <script>
+     
+     window.addEventListener('DOMContentLoaded', function(){
+        alert('dom tree loaded')
+     });
+
+     let image = document.getElementById("img");
+
+     img.addEventListener('load', function(){
+        alert('image loaded successfully!')
+     })
+
+    </script>
+
+</body>
+</html>
