@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .color{
+        background-color: yellow;
+        color: red;
+        padding: 100px;
+      }
+      .dimesnsions{
+        border: 1px solid red;
+        /* padding: 100px; */
+      }
+    </style>
+</head>
+<body>
+    
+    <div id="div" class = "color dimensions">
+        <p>DUMMY PARA</p>
+    </div>
+
+    <script>
+        let getDiv = document.getElementById("div");
+        
+        // offsetwidth, offsetheight is used to calculate the height and width of an element including borders, whereas
+        // cientwidth and clientHeight doesn't includes borders height and width
+        let height = getDiv.offsetHeight;
+        let width = getDiv.offsetWidth;
+
+        
+        console.log(height, width);
+
+        let height1 = getDiv.clientHeight;
+        let width1 = getDiv.clientWidth;
+
+        console.log(height1, width1);
+        
+
+        
+    </script>
+</body>
+</html>
