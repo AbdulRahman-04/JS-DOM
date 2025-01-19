@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">Submit</button>
+
+    <script>
+        // we can set, get, remove, and check(has) if a tag in htm has an attribute or not
+
+        // setting an attribute
+        let getBtn = document.getElementById("btn");
+
+        getBtn.setAttribute("class", "button");
+
+        // getting an attribute
+        let checkBtn = document.getElementById("btn")
+        let checkAttribute = checkBtn.getAttribute("class");
+        console.log(checkAttribute);
+
+        // removing an attribute
+        // let getMyBn = document.getElementById("btn");
+        // getBtn.removeAttribute("class")
+
+        // checkif an element has an attribute
+        let checkMyBtn = document.getElementById("btn");
+        let myCheck = checkMyBtn.hasAttribute("class")
+         
+        console.log(myCheck);
+        
+
+    </script>
+</body>
+</html>
